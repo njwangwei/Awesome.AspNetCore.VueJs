@@ -1,37 +1,58 @@
 ## Welcome to Awesome.AspNetCore.VueJS.Template
 
-You star and clone [ssh](https://github.com/duotai/Awesome.AspNetCore.VueJs.Template/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Awesome.AspNetCore.VueJs.Template is a demo/template project for you to use vuejs and webpack in your dotnetcore web/mvc projects. In this project , you need  know just these knowledges before:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- webpack
+- vuejs
+- dotnet-core
 
-### Markdown
+Clone from ```git@github.com:duotai/Awesome.AspNetCore.VueJs.git```  . If it's useful for you , please star it. Thank you .
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Step 1
+
+Clone the project into your directory:
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+git Clone git@github.com:duotai/Awesome.AspNetCore.VueJs.git
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Step 2
 
-### Jekyll Themes
+Open the project directory , and run ```npm install``` and ```dotnet restore```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yemadu/Awesome.AspNetCore.VueJs.Template/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+cd Awesome.AspNetCore.VueJs
+npm install
+dotnet restore
+```
+
+### Step 3
+
+Use ```Webpack ``` to watch the vue files changed, and then you can run the project with ```dotnet```:
+
+```
+webpack -w
+dotnet run
+```
+
+Any things you changed in the *.vue files, you just refresh the browser . You need not run build for the front-end files.
+
+### Publish
+
+Use ``` webpack -publish ``` to publish the front-end files.
+
+Use ```dotnet publish ``` to publish the back-end files.
+
+```
+webpack -publish
+dotnet publish
+```
+
+
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with Project ?  
+
+- add issues .
+- Join the  qq group :436035237  ask questions  @苏州-似血残阳
